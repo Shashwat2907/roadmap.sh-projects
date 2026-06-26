@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: grey;
+    min-height:100vh;
+    max-width:1080px;
+    margin-inline:auto;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+}
+/* nav logo and text  */
+.logo img{
+    max-height:40px;
+    max-width:auto;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    span{
+        font-weight: bold;
+    }
+}
+/* nav-links */
+.links ul{
+    display:flex;
+    justify-content: space-around;
+    gap:10px;
+    list-style-type: none;
+    text-decoration: none;
+}
+.links ul a {
+    text-decoration: none;
+    color:black;
+}
+.links ul a:hover {
+    text-decoration: none;
+    color:black;
+    border-bottom: 2px solid ;
+}
+
+/* main body for the home page */
+
+.hero-section h1{
+    font-family: "Playfair Display",serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:5rem;
+    height:75vh;
+    
+}
+.about{
+    margin-top:200px;
+    text-align: center;
+}
+
+/* title for projects */
+.title-project{
+    font-family: "Playfair Display",serif;
+    display:flex;
+    font-size:2rem;
+}
+
+/* grid section containing projects */
+.project-grid{
+    display:flex;
+    justify-content: space-between;
+}
+.col-1, .col-2 {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:20px;
+}
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6{
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    padding-block: 10vw;
+    padding-inline: 12vw;
+}
+
+/* articles css */
+.title-articles{
+    font-family: "Playfair Display",serif;
+    display:flex;
+    font-size:2rem;
+}
+
+footer{
+    margin-top:500px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#articles{
+    margin-top:200px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* contact css */
+.title-contact{
+    font-family: "Playfair Display",serif;
+    display:flex;
+    font-size:2rem;
+}

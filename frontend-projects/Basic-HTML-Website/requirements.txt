@@ -1,0 +1,20 @@
+[ ] learn how to create multiple pages on a website.
+
+[ ] Structure a website semantically using HTML.
+
+[ ] Structure in a way that you can easily add styles later.
+
+[ ] Add SEO meta tags to the website.
+
+The website should have the following pages:
+
+[ ] Homepage
+
+[ ] Projects
+
+[ ] Articles
+
+[ ] Contact
+
+[ ] The website should have a navigation bar that should be present on all pages and link to all the pages.
+
