@@ -1,0 +1,338 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    color: white;
+    min-height:100vh;
+    max-width:1080px;
+    margin-inline:auto;
+    box-sizing: border-box;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(72, 72, 72);
+    border-radius: 10px;
+    padding-inline:10px;
+}
+/* nav logo and text  */
+.logo img{
+    max-height:40px;
+    max-width:auto;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    span{
+        font-weight: bold;
+    }
+}
+/* nav-links */
+.links ul{
+    display:flex;
+    justify-content: space-around;
+    gap:10px;
+    list-style-type: none;
+    text-decoration: none;
+}
+.links ul a {
+    text-decoration: none;
+    color:white;
+}
+.links ul a:hover {
+    text-decoration: none;
+    color:black;
+    border-bottom: 2px solid ;
+}
+
+/* main body for the home page */
+
+.hero-section h1{
+    font-family: "Playfair Display",serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:5rem;
+    height:75vh;
+    
+}
+.about{
+    margin-top:200px;
+    text-align: center;
+    font-size: 1.2rem;
+    h2{
+        font-size:2.5rem;
+    }
+}
+
+/* title for projects */
+.title-project{
+    font-family: "Playfair Display",serif;
+    display:flex;
+    font-size:2rem;
+}
+
+/* grid section containing projects */
+.project-grid{
+    display:flex;
+    justify-content: space-between;
+}
+.col-1, .col-2 {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:20px;
+}
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6{
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    padding-block: 10vw;
+    padding-inline: 12vw;
+}
+
+/* articles css */
+.title-articles{
+    font-family: "Playfair Display",serif;
+    display:flex;
+    font-size:2rem;
+}
+
+footer{
+    margin-top:500px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#articles{
+    margin-top:200px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* contact css */
+.title-contact{
+    font-family: "Playfair Display",serif;
+    display:flex;
+    font-size:2rem;
+}
+
+h2 {
+    font-family: "Playfair Display",serif;
+}
+
+/* three-column layouts */
+.trcl{
+    display:flex;
+    justify-content: space-between;
+    border:3px white solid;
+    border-radius: 10px;
+}
+
+.projects{
+    min-width:200px;
+    border-right:3px white solid;
+    /* padding-right:6rem */
+}
+.projects h2{
+    margin-left:1.2rem;
+}
+
+.frl {
+    display:flex;
+    flex-direction: column;
+}
+
+.frl p {
+    margin-block:0px;
+    padding-left:1.2rem;
+    padding-bottom:0.2rem;
+}
+
+.CV,.calculator,.quiz-app,.countdown-timer{
+    min-width:200px;
+    border-bottom:3px solid white;
+    margin-block:1rem;
+}
+.product-upcoming-page{
+    min-width:200px;
+    margin-block:1rem;
+}
+
+
+.trl{
+    display: flex;
+    flex-direction: column;
+    min-width:300px;
+    border-right: white 3px solid;
+    
+}
+.work-experience{
+    padding-left:1.2rem;
+    border-bottom: 3px solid white;
+    a{
+        text-decoration: none;
+        color:aqua;
+    }
+}
+
+.open-source-work{
+    padding-left:1.2rem;
+    a{
+        text-decoration: none;
+        color:aqua;
+    }
+}
+
+.education{
+    padding-right:4.8rem;
+    padding-left:1.2rem;
+}
+
+.education ul {
+    padding-left:1.2rem;
+}
+
+.education li{
+    list-style-type: square;
+    padding-left:0px;
+    margin-left:0px;
+}
+
+/* reviews three column layout */
+
+.review h2{
+    font-size:2.5rem;
+    margin-top:200px;
+    text-align:center;
+    margin-bottom:7.5rem;
+}
+
+.rtrcl{
+    display:flex;
+    justify-content: space-around;
+    gap:2.4rem;
+    margin-bottom:10rem;
+}
+
+.card-1{
+    border: 3px white solid;
+    border-radius:2.4rem;
+    max-width:250px;
+    padding:1.2rem;
+}
+
+
+.card-2{
+    border: 3px white solid;
+    border-radius:2.4rem;
+    max-width:250px;
+    padding:1.2rem;
+}
+
+.card-3{
+    border: 3px white solid;
+    border-radius:2.4rem;
+    max-width:250px;
+    padding:1.2rem;
+}
+
+.teacher{
+    font-weight: bold;
+    color:rgb(206, 244, 255);
+}
+
+@media (max-width: 768px) {
+
+    .rtrcl{
+        flex-direction: column;
+        align-items: center;
+    }
+    .trcl {
+        flex-direction: column;
+        margin-inline:1.2rem;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .review h2{
+        font-size:2rem;
+    }
+    .about {
+        h2{
+            font-size:2rem;
+        }
+        font-size:0.9rem;
+        margin-top: 50px;
+        text-align: center;
+        margin-inline:1.2rem;
+    }
+    .projects {
+        border-right: none;
+        border-bottom: 3px solid white;
+    }
+    .trl {
+        border-right: none;
+    }
+    .open-source-work{
+        border-bottom: 3px solid white;
+    }
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    border:3px rgb(0, 0, 0) solid;
+    background-color: rgba(128, 128, 128, 0.276);
+    width:auto;
+    border-radius:1.2rem;
+    padding:2.4rem;
+}
+
+label{
+    display:block;
+}
+
+.ftcl{
+    display:flex;
+    justify-content: space-between;
+}
+
+.social-logos{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:3px rgb(0, 0, 0) solid;
+    background-color: rgba(128, 128, 128, 0.276);
+    border-radius: 1.2rem;
+    padding-inline:12rem;
+    padding-block:7.5rem;
+   
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
