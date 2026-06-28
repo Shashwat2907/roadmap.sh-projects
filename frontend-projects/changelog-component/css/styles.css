@@ -1,20 +1,26 @@
 body{
     font-family: sans-serif;
-    min-width:768px;
+    /* min-width:768px; */
 }
 .container{
     display:flex;
     flex-direction: column;
+    align-items: center;
     border:2px black solid;
     border-radius: 30px; 
-    margin-inline:200px;
-    justify-content: center;
+    width:100%;
+    margin-inline:auto;
+    max-width: 800px;
+    padding-inline:40px;
+    box-sizing: border-box;
+    
 }
 
 .title{
     display:flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     p{
         color:grey;
     }
@@ -30,21 +36,24 @@ body{
 
 .row{
     display:flex;
-    justify-content: center;
     gap:20px;
+    width:100%;
 }
 .dates,.content{
-    width:350px;
+    flex:1;
     display:flex;
 }
 .dates{
-    justify-content: right;
+    justify-content: end;
+    text-align: right;;
 }
 .content{
     justify-content: start;
+    text-align: left;
 }
 
 .circle{
+    flex-shrink: 0;
     position:relative;
     width:20px;
     height:20px;
