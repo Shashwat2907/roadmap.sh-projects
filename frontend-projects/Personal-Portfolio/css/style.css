@@ -95,6 +95,8 @@ nav{
     border-radius: 50px;
     padding-block: 10vw;
     padding-inline: 12vw;
+    border:3px solid white;
+    border-radius:10px; 
 }
 
 /* articles css */
